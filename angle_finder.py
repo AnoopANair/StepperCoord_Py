@@ -1,6 +1,10 @@
-def angle(x1,y1,x2,y2,x3,y3):
+import cv2
+import numpy as np
+import math
+
+def angle(x1,y1,x2,y2,x3,y3,separation):
     # distance of the outer polygon from the inner polygon
-    distance = 50
+    distance = separation
     # dot and cross products of vector1  with  [1,0]  vector
     dot_value1 = (x1-x2) 
     cross_value1 = (y1-y2)
